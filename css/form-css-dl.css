@@ -1,0 +1,206 @@
+@import url(https://fonts.googleapis.com/css?family=Khand:500,300,700);
+.shadow_none {
+    box-shadow: none;
+}
+html,
+body {
+    height: 100%;
+}
+html * {
+    max-height: 999999px;
+}
+img {
+    border: 0;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+.clear {
+    clear: both;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both !important;
+    height: 0;
+}
+* html .clearfix {
+    position: relative;
+    zoom: 1;
+}
+* + html .clearfix {
+    position: relative;
+    zoom: 1;
+}
+a {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    outline: 0;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+a:active,
+a:focus {
+    outline: 0;
+}
+.khand {
+    font-family: 'Khand', sans-serif;
+}
+.error-summary ul {
+    margin-bottom: 0;
+}
+.form-container-unique {
+    max-width: 330px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 0;
+}
+.form-container-unique .form-group {
+    margin-bottom: 10px;
+}
+.form-container-unique .form-control {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.3);
+    border: none;
+    height: 50px;
+}
+.form-container-unique .form-actions {
+    position: relative;
+    margin-top: 2px;
+}
+.form-container-unique .form-actions:after {
+    display: none;
+}
+.form-container-unique .form-actions .register-btn {
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    margin: 0;
+    text-transform: uppercase;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.67);
+    text-align: center;
+    line-height: 1;
+    background-image: none;
+    z-index: 1;
+    position: relative;
+    background-color: #ffffff;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    color: #502922;
+    text-decoration: none;
+    font-size: 46px;
+    font-family: 'Khand', sans-serif;
+    padding: 22px 5px 16px 5px;
+}
+.form-container-unique .form-actions .register-btn:after {
+    content: '';
+    display: block;
+    position: absolute;
+    opacity: 1;
+    z-index: -1;
+    background-color: #ffae00;
+    background-image: -webkit-linear-gradient(top, #ffd884, #ffba26 50%, #ffae00 51%);
+    background-image: linear-gradient(to bottom, #ffd884, #ffba26 50%, #ffae00 51%);
+    left: 7px;
+    right: 7px;
+    top: 7px;
+    bottom: 7px;
+    border-radius: 3px;
+    margin: 0;
+}
+.form-container-unique .form-actions .register-btn:hover {
+    color: #502922;
+    text-decoration: none;
+    background-image: none;
+    background-color: #ffffff;
+    background: rgba(255, 255, 255, 0.5);
+}
+.form-container-unique .form-actions .register-btn:hover:after {
+    background-color: #ffbe33;
+    background-image: -webkit-linear-gradient(top, #ffe8b7, #ffca59 50%, #ffbe33 51%);
+    background-image: linear-gradient(to bottom, #ffe8b7, #ffca59 50%, #ffbe33 51%);
+}
+.form-container-unique .form-actions .register-btn:focus,
+.form-container-unique .form-actions .register-btn.focus,
+.form-container-unique .form-actions .register-btn:active,
+.form-container-unique .form-actions .register-btn.active {
+    color: #502922;
+    text-decoration: none;
+}
+@media screen and (max-width: 767px) {
+    .form-container-unique .form-actions .register-btn {
+        font-size: 22px;
+    }
+}
+.section-footer .form-container-unique {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    max-width: 796px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width: 767px) {
+    .section-footer .form-container-unique {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+.section-footer .form-container-unique .register-btn {
+    padding: 30px 20px 22px 20px;
+    font-size: 80px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.section-footer .form-container-unique .register-btn:after {
+    border-radius: 9px;
+}
+@media screen and (max-width: 767px) {
+    .section-footer .form-container-unique .register-btn {
+        font-size: 30px;
+    }
+}
+.section-footer .form-container-unique .form-group {
+    width: 50%;
+    float: left;
+    padding: 0 5px;
+}
+@media screen and (max-width: 767px) {
+    .section-footer .form-container-unique .form-group {
+        width: auto;
+        float: none;
+        padding: 0;
+    }
+}
+.section-footer .form-container-unique .row {
+    width: 50%;
+    padding: 0 0 0 5px;
+}
+@media screen and (max-width: 767px) {
+    .section-footer .form-container-unique .row {
+        width: auto;
+        float: none;
+        padding: 0;
+    }
+}
+.section-footer .form-container-unique .row .form-group {
+    width: auto;
+    float: none;
+    padding: 0;
+}
+.section-footer .form-container-unique .form-actions {
+    padding: 0 5px;
+    clear: left;
+}
+@media screen and (max-width: 767px) {
+    .section-footer .form-container-unique .form-actions {
+        padding: 0;
+    }
+}
+

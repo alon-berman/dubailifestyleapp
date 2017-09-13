@@ -1,0 +1,11 @@
+{
+  "name": "dubailifestyle",
+  "version": "1.0.0",
+  "description": "Test",
+  "main": "site.js",
+  "scripts": {
+    "start": "node index."
+  },
+  "author": "",
+  "license": "ISC"
+}

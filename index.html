@@ -1,0 +1,644 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Dubai Lifestyle</title>
+    <base href="//dubailifestyleapp.com/">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./fonts/font-awesome/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./css/flag-icon.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <!--<link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png">-->
+    <!--<link rel="icon" type="image/png" href="./images/favicons/favicon-32x32.png" sizes="32x32">-->
+    <!--<link rel="icon" type="image/png" href="./images/favicons/favicon-16x16.png" sizes="16x16">-->
+    <!--<link rel="manifest" href="./images/favicons/manifest.json">-->
+    <!--<link rel="mask-icon" href="./images/favicons/safari-pinned-tab.svg" color="#5bbad5">-->
+    <!--<link rel="shortcut icon" href="./images/favicons/favicon.ico">-->
+    <!--<meta name="msapplication-config" content="./images/favicons/browserconfig.xml">-->
+    <meta name="theme-color" content="#ffffff">
+
+
+
+</head>
+<body class="">
+
+<div id="popup" class="exit_popup">
+    <div class="exit_popup_overlay" ></div>
+
+
+
+    <div class="popup_inner">
+        <div class="popup_content">
+            <a class="close_button" style="" onclick="$('#popup').css('display','none');mousebottom = 0;setTimeout(function(){pu=1;},5000);"></a>
+            <div class="popup_content_inner">
+                <div class="popup-header">
+                    <div class="title">
+                        WAIT!
+                        <div>
+                            Don’t Leave Empty-Handed
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="popup-description">
+                    If you leave now, you’ll regret it when you come back to try and download this app and you see the page <span>cannot be found</span>.
+                </div>
+
+                <div class="popup-profit">
+                    Do you <span>really</span> want to miss out on profiting over
+                    <div>$<span>7,183.80</span> per day?</div>
+
+                </div>
+
+                <div class="popup-form-title">
+                    Own the <b>Dubai Lifestyle App <span>FREE</span></b> today
+                </div>
+
+                <form action="members/index.php?ot=859d85dd2c7e3b84826ebedb371deca0&lang=en" method="post" onsubmit="if(!(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i.test($('#emailpu').val()))){
+        alert('Please enter a valid email');
+        $('#emailpu').focus();
+        return false;
+      }
+      else{
+        if(onsubmitfix){
+          yesyoucan = 0;
+          onsubmitfix = 0;
+        }
+        else return false;
+      }" class="popup_form" name="popform" id="popform">
+                    <div class="form-group">
+                        <label for="" class="control-label"></label>
+                        <input type="text" name="email" id="emailpu" placeholder="Enter Your Email" class="form-control input-lg input-email"/>
+                    </div>
+
+                    <div class="buttons">
+                        <button type="submit" class="button big-button" id="exitsubmit" xonclick="$('#popform').submit();">GET FREE ACCESS</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="scroll-form" id="scrollForm">
+    <form action="members/index.php?ot=859d85dd2c7e3b84826ebedb371deca0&lang=en" method="post" onsubmit="if(!(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i.test($('#emailpu1').val()))){
+        alert('Please enter a valid email');
+        $('#emailpu1').focus();
+        return false;
+      }
+      else{
+        if(onsubmitfix){
+          yesyoucan = 0;
+          onsubmitfix = 0;
+        }
+        else return false;
+      }" class="scroll-form-content">
+        <div class="description">
+            Enter your full name and email address in the form below to get immediate <b>FREE</b> access to the proprietary software.
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group"><input type="text" class="form-control" name="name" id="name" placeholder="Name"></div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group"><input type="text" class="form-control" name="email" id="emailpu1" placeholder="Email"></div>
+            </div>
+            <div class="col-sm-4">
+                <div class="buttons">
+
+                    <button type="submit" class="button small-button">Get Started now</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div id="wrapper">
+    <div id="container">
+
+
+        <div class="section section-intro scroll-trigger">
+
+            <div class="section-header">
+                <div class="header-content">
+                    <div class="logo">
+                        <a href="">Dubai Lifestyle</a>
+                    </div>
+                </div>
+
+                <div class="joined-wrapper">
+                    <div class="joined" id="joined" style="display:block">
+                        <span id="pnum" class="pnum"></span>
+
+                        <div class="desc">
+                            <div><span id="sWord"></span> Remaining</div>
+                            <div>in <span id="pflag" class="flag-icon"></span> <span id="pplace" class="pplace"></span></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="counter-wrapper" >
+
+                    <div class="counter-text">
+                        Time Remaining <span>OFFER EXPIRES</span>
+                    </div>
+
+                    <div class="counter" id="countdown"></div>
+                </div>
+            </div>
+
+            <div class="section-container">
+
+                <div class="intro-title">
+                    <div class="trim_spaces">
+                        <div class="scalable dla-subtitle">
+                            <div>Be One Of <span>100 Beta Testers</span> To Profit</div>
+                            <div>From The <span>Dubai Lifestyle App</span></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="intro-wrapper">
+                    <div class="video-wrapper">
+                        <div class="video">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="620" height="370" src="video.php?link=DubailifestyleApp_EN_1_360&autoplay=1&p=2" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <form action="members/index.php?ot=859d85dd2c7e3b84826ebedb371deca0&lang=en" method="post" onsubmit="if(!(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i.test($('#emailpu2').val()))){
+        alert('Please enter a valid email');
+        $('#emailpu2').focus();
+        return false;
+      }
+      else{
+        if(onsubmitfix){
+          yesyoucan = 0;
+          onsubmitfix = 0;
+        }
+        else return false;
+      }" class="big-form" id="form1"  name="form1">
+
+
+
+                        <div class="buttons">
+                            <button type="submit" xonclick="document.form1.submit();" class="button big-button" href="/members.html">GET FREE ACCESS</button>
+                        </div>
+                    </form>
+
+
+                </div>
+
+
+
+                <div class="secure">
+                    <div class="desc">
+                        We respect your privacy and your information is 100% secure
+                    </div>
+
+                    <div class="logos">
+                        <img src="./images/logos.png" alt="">
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+        <div class="section section-meet-scott">
+            <div class="section-container">
+                <div class="section-title">
+                    Meet Scott Hathaway
+                    <span>CEO & Founder, Dubai Lifestyle App</span>
+                </div>
+
+                <div class="section-description">
+                    <img src="./images/scott.jpg" alt="">
+
+                    If you haven’t yet heard, the <span>Dubai Lifestyle App</span> has just launched internationally
+                    and we’re looking for <b>100 beta testers</b> to make profits of over
+                    <div>$<b>7000</b> a day</div>
+
+                    Watch the video now to see how you can join us - <span><b>free</b></span>!
+
+                    <img src="./images/friends.jpg" alt="">
+
+                    <i>Your Friends,</i>
+                    The <span>Dubai Lifestyle App</span> Team
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="section section-testimonials">
+            <div class="section-container">
+                <div class="section-title">What People Are Saying</div>
+
+                <ul class="testimonials-list">
+                    <li>
+                        <div class="meta">
+                            By <span class="name">Lincoln Tremlin</span> on <span class="date">April 10, 2016</span>
+                            <span class="rate"><img src="./images/stars5.jpg" alt=""></span>
+                            <div class="verified">
+                                Verified Member
+                            </div>
+                        </div>
+
+                        <div class="content">For the past 3 years, I tried everything you could imagine to profit online. But I was scammed every single time. This was my last shot. And I couldn’t be happier to announce that I made my first $6,839.23 online!</div>
+                    </li>
+                    <li>
+                        <div class="meta">
+                            By <span class="name">Liam Nelson</span> on <span class="date">May 28, 2016</span>
+                            <span class="rate"><img src="./images/stars5.jpg" alt=""></span>
+                            <div class="verified">
+                                Verified Member
+                            </div>
+                        </div>
+                        <div class="content">I made $11,958.31 in my first 72 hours after activating the software. This is the first time I ever made any money online!</div>
+                    </li>
+                    <li>
+                        <div class="meta">
+                            By <span class="name">Mark Jones</span> on <span class="date">June 02, 2016</span>
+                            <span class="rate"><img src="./images/stars5.jpg" alt=""></span>
+                            <div class="verified">
+                                Verified Member
+                            </div>
+                        </div>
+
+                        <div class="content">Get the Dubai Lifestyle App now so you can finally get out of the rat race and start living the life you always wanted!</div>
+                    </li>
+                    <li>
+                        <div class="meta">
+                            By <span class="name">Carrie McIntosh</span> on <span class="date">June 14, 2016</span>
+                            <span class="rate"><img src="./images/stars5.jpg" alt=""></span>
+                            <div class="verified">
+                                Verified Member
+                            </div>
+                        </div>
+
+
+                        <div class="content">Unbelievable! I just paid off my $37,000 student debt after only 2 weeks of using the Dubai Lifestyle App.</div>
+                    </li>
+                    <li>
+                        <div class="meta">
+                            By <span class="name">Lawrence Wallace</span> on <span class="date">June 14, 2016</span>
+                            <span class="rate"><img src="./images/stars4_5.jpg" alt=""></span>
+                            <div class="verified">
+                                Verified Member
+                            </div>
+                        </div>
+
+                        <div class="content">Didn’t think it was possible that I could ever make a dime online. But within 48 hours, I made my first $11,902.80.</div>
+                    </li>
+                    <li>
+                        <div class="meta">
+                            By <span class="name">Frederick Lam</span> on <span class="date">June 14, 2016</span>
+                            <span class="rate"><img src="./images/stars4_5.jpg" alt=""></span>
+                            <div class="verified">
+                                Verified Member
+                            </div>
+                        </div>
+
+
+                        <div class="content">I deposited $250 and in 37 minutes, I made my investment back plus made a $701 profit! The Dubai Lifestyle App gives an unreal return on investment that I couldn’t get anywhere else.</div>
+                    </li>
+
+                    <li>
+                        <div class="meta">
+                            By <span class="name">Mohammed Singh</span> on <span class="date">June 14, 2016</span>
+                            <span class="rate"><img src="./images/stars4_5.jpg" alt=""></span>
+                            <div class="verified">
+                                Verified Member
+                            </div>
+                        </div>
+                        <div class="content">Why bother investing your hard-earned money anywhere else? The Dubai Lifestyle App is the REAL deal.</div>
+                    </li>
+                    <li>
+                        <div class="meta">
+                            By <span class="name">Dan Nottingham</span> on <span class="date">June 14, 2016</span>
+                            <span class="rate"><img src="./images/stars4.jpg" alt=""></span>
+                            <div class="verified">
+                                Verified Member
+                            </div>
+                        </div>
+
+                        <div class="content">Thanks to the Dubai Lifestyle App, I’m making a 6-figure income for the first time in my life. It’s crazy to believe that I started off with just $250 and now I’m profiting $23,103.43 every week.</div>
+                    </li>
+                    <li>
+                        <div class="meta">
+                            By <span class="name">Charles Missoni</span> on <span class="date">June 14, 2016</span>
+                            <span class="rate"><img src="./images/stars4.jpg" alt=""></span>
+                            <div class="verified">
+                                Verified Member
+                            </div>
+                        </div>
+                        <div class="content">What's insane is that this really does work! It’s 3 AM right now and I’ve already made $1123.80 in just 34 minutes.</div>
+                    </li>
+                    <li>
+                        <div class="meta">
+                            By <span class="name">Cameron Met</span> on <span class="date">June 14, 2016</span>
+                            <span class="rate"><img src="./images/stars4.jpg" alt=""></span>
+                            <div class="verified">
+                                Verified Member
+                            </div>
+                        </div>
+
+                        <div class="content">The Dubai Lifestyle App gave me the money I needed to take my wife on the dream honeymoon we never had. The best part is I kept making money even while we were enjoying our honeymoon!</div>
+                    </li>
+                    <li>
+                        <div class="meta">
+                            By <span class="name">Andrey Ricovski</span> on <span class="date">June 14, 2016</span>
+                            <span class="rate"><img src="./images/stars4.jpg" alt=""></span>
+                            <div class="verified">
+                                Verified Member
+                            </div>
+                        </div>
+
+                        <div class="content">The Dubai Lifestyle App changes people’s lives every minute. Will you be next?</div>
+                    </li>
+                </ul>
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="section section-footer">
+
+    <div class="section-container">
+
+        <form action="members/index.php?ot=859d85dd2c7e3b84826ebedb371deca0&lang=en" method="post" onsubmit="if(!(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i.test($('#emailpu3').val()))){
+        alert('Please enter a valid email');
+        $('#emailpu3').focus();
+        return false;
+      }
+      else{
+        if(onsubmitfix){
+          yesyoucan = 0;
+          onsubmitfix = 0;
+        }
+        else return false;
+      }" class="big-form" id="form2" name="form2">
+
+            <div class="title">
+                Enter your full name and email address in the form below to get immediate
+                <div><span>FREE</span> access to the  <span>Dubai Lifestyle App</span></div>
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <div class="form-group"><input type="text" class="form-control" name="name" id="name" placeholder="Enter Your Name"></div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group"><input type="text" class="form-control" name="email" id="emailpu3" placeholder="Enter Your Email"></div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="submit" href="#" xonclick="document.form2.submit();" class="button big-button" >GET FREE ACCESS</button>
+            </div>
+
+        </form>
+
+        <div class="secure">
+            <div class="desc">
+                We respect your privacy and your information is 100% secure
+            </div>
+
+            <div class="logos">
+                <img src="./images/logos.png" alt="">
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="footer">
+        <div class="footer-content">
+
+            <div class="description">
+                <p>Binary options present a significant opportunity for you to make serious earnings, but like any investment, they present an element of risk. Potential loss of full of partial funds should be considered at all times before making any trade. We urge you to explore individual tax liability laws in your country of residence, and recommend reading our Terms of Service for more information. Please note: It is illegal under U.S. law to solicit the purchase and sale of commodity options unless explicitly listed for trading on a CFTC exchange or legally exempt.</p>
+            </div>
+
+            <ul class="footer-menu">
+                <li><a href="">Terms</a></li>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Support</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+
+</div>
+
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+<script src="./js/jquery.plugin.min.js" type="text/javascript"></script>
+<script src="./js/jquery.countdown.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="./js/scripts.js"></script>
+<script id="welcomescript" src="//awidget.org/stats/welcome.php?ot=859d85dd2c7e3b84826ebedb371deca0&lang=en"></script>
+<script>
+var ot = '859d85dd2c7e3b84826ebedb371deca0';
+var tt = 0;
+
+
+// exit popup
+var mousebottom = 0;
+var pu = 1;
+setTimeout(function(){pu=1;},5000);
+
+$(document).mousemove(function(e){
+    var X = e.pageX;
+    var Y = e.pageY;
+
+    //console.log(Y - $(window).scrollTop());
+    if(Y-$(window).scrollTop() > 200)
+        mousebottom = 1;
+
+    if(Y-$(window).scrollTop()<15 && mousebottom == 1 && pu == 1){
+        $('#popup').css('display', 'block');
+        mousebottom = 0;
+        pu = 0;
+    }
+
+
+});
+
+// end exit popup
+
+// exit alert
+var yesyoucan = 1;
+
+window.onunload = window.onbeforeunload = function (evt) {
+    var message = '***************************************\n\n W A I T   B E F O R E   Y O U   G O !\n\n       How About I Give My Private software for FREE?\n\n  CLICK THE *CANCEL* BUTTON RIGHT NOW\n     TO STAY ON THE CURRENT PAGE.\n\n***************************************';
+
+
+    var ni = new Image();
+    ni.src = '//awidget.org/stats/welcome.php?ot='+window.ot+'&tick='+window.tt;
+
+
+    if (typeof evt == "undefined") {
+        evt = window.event;
+    }
+    //console.log('2. ' + yesyoucan);
+    if(yesyoucan){
+        if (evt) {
+            evt.returnValue = message;
+
+        }
+        //do something
+        reloadpage();
+
+        return message;
+    }
+};
+
+
+
+
+
+
+
+$(document).ready(function() {
+    dataStart();
+
+
+
+
+
+
+    $('#countdown').countdown({
+        until: 666, format: 'M:S', compact: true,
+        onExpiry: function(){
+//          $('#countdownText').html('<div class="title">Timeout please try again, your spot is not secured anymore.</div>');
+        }
+    });
+
+
+
+
+
+});
+
+
+$(document).ready(function() {
+    $('a.outyes').click(function() {
+        yesyoucan = 0;
+        //console.log('1. ' + yesyoucan);
+    });
+
+});
+
+
+onsubmitfix = 1;
+
+function dataStart(){
+
+    $.ajax({
+        url: './data/data.php',
+        type: 'GET',
+        jsonp: 'callback',
+        dataType: 'jsonp',
+        success: function(json){
+
+//          var city = json.city;
+            var country = json.country;
+            var people = json.peoples;
+//          var seconds = json.seconds;
+            var flag = json.flag;
+
+            $('#pnum').text(people);
+
+            if (people > 1){
+                $('#sWord').text('Spots');
+            } else {
+                $('#sWord').text('Spot');
+            }
+
+            $('#pplace').text(country);
+            $('#pflag').addClass(flag);
+//          $('#psec').text(seconds);
+
+            $('#joined').fadeIn(300);
+
+        },
+        error: function(json){
+            //console.log(json);
+        }
+    });
+
+}
+
+
+
+var ajaxwork = false;
+function reloadpage(){
+    var currentdata = {};
+
+    ajaxwork = $.ajax({
+        url: "./exit-page-body.php?ot=859d85dd2c7e3b84826ebedb371deca0&lang=en",
+        success: function(bdy){
+            //if(msg.answer=='ok'){
+
+            $('body').empty();
+            $('body').append(bdy);
+            $('body').addClass('exit-page');
+
+            fullheightCalc();
+
+//console.log(msg);
+            //}
+        },
+        error: function (xhr, ajaxOptions, thrownError) {
+
+        }
+    });//.abort()
+}
+</script>
+
+<!--page scripts-->
+<script id="welcomescript" src="//awidget.org/stats/welcome.php?ot=859d85dd2c7e3b84826ebedb371deca0&lang=en"></script>
+
+</body>
+</html>
